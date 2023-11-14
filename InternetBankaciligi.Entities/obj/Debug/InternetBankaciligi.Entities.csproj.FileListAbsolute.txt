@@ -1,0 +1,9 @@
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\bin\Debug\InternetBankaciligi.Entities.dll
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\bin\Debug\InternetBankaciligi.Entities.pdb
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\obj\Debug\InternetBankaciligi.Entities.csproj.AssemblyReference.cache
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\obj\Debug\InternetBankaciligi.Entities.csproj.CoreCompileInputs.cache
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\obj\Debug\InternetBankaciligi.Entities.csproj.CopyComplete
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\obj\Debug\InternetBankaciligi.Entities.dll
+C:\Users\mehmets\source\repos\InternetBankaciligi\InternetBankaciligi.Entities\obj\Debug\InternetBankaciligi.Entities.pdb

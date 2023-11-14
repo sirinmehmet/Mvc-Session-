@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\InternetBankaciligi.WebUI",
+    "\\InternetBankaciligi.WebUI\\Controllers",
+    "\\InternetBankaciligi.WebUI\\Views",
+    "\\InternetBankaciligi.WebUI\\Views\\Account",
+    "\\InternetBankaciligi.WebUI\\Views\\Home",
+    "\\InternetBankaciligi.WebUI\\Views\\Shared"
+  ],
+  "SelectedNode": "\\InternetBankaciligi.WebUI\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}

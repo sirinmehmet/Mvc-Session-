@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Ana Sayfa";
+}
+
+@model InternetBankaciligi.Entities.Dtos.Users.UserResponseDto
+
+@if (Model != null)
+{
+    <br/>
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Seni Tebrik Ederiz!</h4>
+        <p>
+            Ahh dostum!! Bu ekranı görüyorsan eğer çok büyük bir iş başarmış demek oluyorsun. Bu ekran senin sisteme başarılı bir şekilde giriş yaptığın anlamına geliyor. Bu ekranı kullanarak şirinlerce dolu avantajlı dünyada para transferleri yapabilirsin.
+        </p>
+        <hr>
+        <p class="mb-0">
+            <b>Adınız Soyadınız:</b> @Model.FirstName @Model.LastName
+            <br />
+            <b>Mail Adresiniz:</b> @Model.MailAddress
+            <br />
+            <b>Kullanıcı Adınız:</b> @Model.Username
+        </p>
+    </div>
+}

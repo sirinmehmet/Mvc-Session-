@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title | ŞirinBank İnternet Şubesi</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ŞirinBank (İnternet Şubesi)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Home/Index">Ana Sayfa <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - ŞirinBank</p>
+            <b id="countdown" style="color: red"></b>
+        </footer>
+    </div>
+
+    <script src="~/Content/js/jquery-3.6.4.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(async function () {
+            var secondsRemaining = 15;
+            var countdownElement = $('#countdown');
+            var interval;
+
+             function startCountdown() {
+                interval = setInterval(  function () {
+                    secondsRemaining--;
+
+                    if (secondsRemaining <= 10) {
+                        if (secondsRemaining === 10) {
+                            alert('Oturumunuz 10 saniye içinde kapatılacak!');
+                        }
+                    }
+                    countdownElement.text(secondsRemaining + ' saniye içinde oturum kapatılacaktır.');
+
+
+                    if (secondsRemaining <= 0) {
+                        clearInterval(interval);
+                        window.location.href = '/Account/Logout';
+                    }
+                }, 1000);
+            }
+
+            startCountdown();
+
+            var userResponded = false;
+
+            function resetCountdown() {
+                if (!userResponded) {
+                    clearInterval(interval);
+                    secondsRemaining = 15;
+                    startCountdown();
+                    console.log("Kullanıcı hareket etti. Sayaç sıfırlandı.")
+                }
+            }
+
+            $(document).on('mousemove', resetCountdown);
+            $(document).on('keydown', resetCountdown); // Eğer klavye kullanımı da varsa
+
+        });
+    </script>
+
+</body>
+</html>
